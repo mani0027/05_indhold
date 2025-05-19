@@ -1,0 +1,19 @@
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+#facebookicon
+{
+    width: 30px;
+    height: 30px;
+}
+
+#footericon
+{
+    display: flex;
+    justify-content: left;
+}

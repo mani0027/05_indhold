@@ -9,3 +9,16 @@ img {
   height: auto;
   display: block;
 }
+
+body{
+  background-color: rgb(240, 235, 216);
+}
+
+footer{
+  background-color: black;
+   color:  rgb(240, 235, 216); 
+   line-height: 35px;
+}
+footer a{
+  color: rgb(240, 235, 216);
+}
