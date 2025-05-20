@@ -1,20 +1,19 @@
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-.video {
-  display: grid;
-  grid-column: 1/5;
+#facebookicon
+{
+    width: 30px;
+    height: 30px;
 }
 
-.menu {
-  display: grid;
-  grid-column: 1/5;
+#footericon
+{
+    display: flex;
+    justify-content: left;
 }
