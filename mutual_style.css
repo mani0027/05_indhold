@@ -63,3 +63,120 @@ p {
   margin-top: 20px;
   margin-bottom: 27px;
 }
+
+/***************** Menu (menuen er fra undervisning med små justeringer) ********************/
+header {
+  background-color: rgba(240, 235, 216, 1);
+  padding-top: 2rem;
+}
+
+.logo {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.navbar {
+  padding: 20px 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Centrerer vandret */
+  padding: 10px 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu a:hover {
+  color: rgba(116, 10, 6, 1);
+  text-decoration: underline;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  header {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .navbar {
+    padding: 0 5px;
+    margin-right: 1rem;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: rgba(240, 235, 216, 1);
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 84%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: center;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  /* Gør indholdet bag burgermenuen slørret*/
+  .menu-open .indhold {
+    opacity: 30%;
+  }
+}
