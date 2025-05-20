@@ -35,3 +35,30 @@ footer a {
   padding-bottom: 5%;
   background-size: 90%, 90%;
 }
+
+/************ Font ***********/
+.goblin-one-regular {
+  font-family: "Goblin One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/********* Tekst ********/
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Goblin One", serif;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Goblin One", serif;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 27px;
+}

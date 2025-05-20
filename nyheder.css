@@ -1,0 +1,36 @@
+/******** Mobilsite ******/
+
+img {
+  padding: 50px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.boks {
+  background-color: rgba(116, 10, 6, 1);
+  width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  color: rgba(240, 235, 216, 1);
+  border: 3px solid black;
+  font-family: "Goblin One", serif;
+}
+
+/******** Desktop *********/
+
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .boks {
+    margin: 5px auto;
+  }
+}
