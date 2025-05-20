@@ -10,15 +10,28 @@ img {
   display: block;
 }
 
-body{
+/*******************************************/
+
+body {
   background-color: rgb(240, 235, 216);
 }
 
-footer{
+footer {
   background-color: black;
-   color:  rgb(240, 235, 216); 
-   line-height: 35px;
-}
-footer a{
   color: rgb(240, 235, 216);
+  line-height: 35px;
+}
+footer a {
+  color: rgb(240, 235, 216);
+}
+
+/**************** Baggrundsramme ****************/
+
+#ramme {
+  background: url(Img/top_ramme.svg) center top no-repeat, url(/Img/bund_ramme.svg) center bottom no-repeat;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-size: 90%, 90%;
 }
