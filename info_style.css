@@ -11,3 +11,16 @@ img {
 }
 
 /* Burgermenu kopires og sættes ind her */
+
+/* Info tekst og overskfrigft */
+
+.infoh1  {
+  text-align: center;
+  margin: 20px;
+}
+
+.infop {
+  text-align: center;
+  margin: 20px
+}
+
