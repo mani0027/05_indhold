@@ -1,77 +1,30 @@
-.burger {
-  color: darkblue;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: #333333;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-.burger a {
-  color: darkblue;
-}
-
-/*************** forside_layout_mobil *********************/
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.header_forside {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-header img {
-  display: grid;
-  grid-column: 1/6;
-}
-.streg_1 {
-  grid-column: 1/6;
-  margin-top: -270px;
-  z-index: 2;
-}
-.streg_2 {
-  grid-column: 1/6;
-  margin-top: -145px;
-}
-
-.video {
-  display: grid;
-  grid-column: 1/6;
-  grid-row: 1/3;
-}
-main img {
-  display: grid;
-  grid-column: 1/6;
-}
-.img_1 {
-  display: grid;
-  grid-column: 2/4;
-  grid-row: 3/4;
-}
-/*************** forside_mobil *********************/
-.h1_forside {
-  display: grid;
-  grid-column: 1/6;
-  grid-row: 1/2;
-}
-.h3_forside {
-  display: grid;
-  grid-column: 1/6;
-  grid-row: 2/3;
+body {
+  background-color: rgb(248, 240, 212);
 }
 
 @media screen and (max-width: 800px) {
+  /*************** menu burger *********************/
+  .burger {
+    color: darkblue;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
+  }
+  .burger a {
+    color: darkblue;
+  }
+
   .menu {
     display: none;
   }
@@ -111,4 +64,84 @@ main img {
   nav.active .menu a {
     font-size: 24px;
   }
+
+  /*************** forside_layout_mobil *********************/
+  /******* header **********/
+  .header_forside {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  header img {
+    display: grid;
+    grid-column: 1/6;
+  }
+  .tyk-streg1 {
+    height: 70px;
+    background-color: black;
+    border: none;
+    width: 100%;
+    margin: 0;
+    grid-column: 1/6;
+    margin-top: -570px;
+    z-index: 2;
+  }
+
+  .video {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/3;
+  }
+
+  .tyk-streg2 {
+    height: 70px;
+    background-color: black;
+    border: none;
+    width: 100%;
+    margin: 0;
+    grid-column: 1/6;
+    margin-top: -320px;
+    z-index: 2;
+  }
+
+  .overskrift_forside {
+    grid-column: 1/5;
+    margin-top: -230px;
+    margin-left: 20px;
+  }
+  /******* main **********/
+  .knapper_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .nyheder_forside {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 1/2;
+    margin-top: -50px;
+    padding-bottom: 30px;
+  }
+  .lokation_forside {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 2/3;
+    padding-bottom: 50px;
+  }
+
+  .shop_forside {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 3/4;
+    padding-bottom: 50px;
+  }
+  .events_forside {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 4/5;
+    padding-bottom: 50px;
+  }
+
+  /*************** forside_mobil *********************/
 }
