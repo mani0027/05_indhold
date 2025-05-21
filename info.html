@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="mutual_style.css">
     <link rel="stylesheet" href="mutual_layout.css">
     <link rel="stylesheet" href="info__layout.css">
@@ -17,16 +22,25 @@
 <body>
 
     <header>
-        <nav>
-            <ul>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
                 <li><a href="index.html">Forside</a></li>
-                <li><a href="info.html">Info</a></li>
                 <li><a href="nyheder.html">Nyheder</a></li>
-                <li><a href="om.html">Om</a></li>
-                <li><a href="shop.html">shop</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="om_os.html">Vores historie</a></li>
+                <li><a href="info.html">Find os</a></li>
             </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
 
@@ -74,7 +88,11 @@
 <p>LØRDAG: 11-14</p>
 <p>ONSDAG, SØNDAG & HELLIGDAGE: LUKKET</p></div>
 
+ <script src="menu.js"></script>
+    <script src="animationer.js"> </script>
+
     </footer>
+   
 
 </body>
 
