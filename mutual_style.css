@@ -44,6 +44,12 @@ footer a {
   font-style: normal;
 }
 
+.ancizar-serif-brødtekst {
+  font-family: "Ancizar Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /********* Tekst ********/
 
 h1 {
@@ -90,9 +96,10 @@ header {
 
 .menu a {
   text-decoration: none;
+  font-family: "Ancizar Serif", serif;
   color: black;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: 650;
+  font-size: 1.8rem;
 }
 
 .menu a:hover {
