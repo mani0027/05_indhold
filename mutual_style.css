@@ -22,6 +22,12 @@ footer {
   line-height: 35px;
   margin-top: 30px;
 }
+
+.footrtekst {
+  display: flex;
+
+}
+
 footer a {
   color: rgb(240, 235, 216);
 }
