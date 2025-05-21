@@ -19,7 +19,7 @@ body {
 /**************** Baggrundsramme ****************/
 
 #ramme {
-  background: url(Img/top_ramme.svg) center top no-repeat, url(/Img/bund_ramme.svg) center bottom no-repeat;
+  background: url(billeder/ramme/top_ramme.svg) center top no-repeat, url(billeder/ramme/bund_ramme.svg) center bottom no-repeat;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
