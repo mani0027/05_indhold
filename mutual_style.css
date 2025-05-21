@@ -50,6 +50,12 @@ footer a {
   font-style: normal;
 }
 
+.hepta-slab-brødtekst {
+  font-family: "Hepta Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /********* Tekst ********/
 
 h1 {
@@ -68,6 +74,7 @@ p {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 27px;
+  font-family: "Hepta Slab", serif;
 }
 
 /***************** Menu (menuen er fra undervisning med små justeringer) ********************/

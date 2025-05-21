@@ -11,14 +11,8 @@
   border: 3px solid black;
   font-family: "Goblin One", serif;
 }
-.hepta-slab-brødtekst {
-  font-family: "Hepta Slab", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 p {
-  font-family: "Hepta Slab", serif;
   font-size: 1rem;
 }
 
