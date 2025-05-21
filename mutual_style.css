@@ -16,22 +16,6 @@ body {
   background-color: rgb(240, 235, 216);
 }
 
-footer {
-  background-color: black;
-  color: rgb(240, 235, 216);
-  line-height: 35px;
-  margin-top: 30px;
-}
-
-.footrtekst {
-  display: flex;
-
-}
-
-footer a {
-  color: rgb(240, 235, 216);
-}
-
 /**************** Baggrundsramme ****************/
 
 #ramme {
@@ -198,5 +182,74 @@ header {
   /* Gør indholdet bag burgermenuen slørret*/
   .menu-open .indhold {
     opacity: 30%;
+  }
+}
+
+/************** footer *******************/
+
+footer {
+  background-color: black;
+  color: rgb(240, 235, 216);
+  line-height: 40px;
+  margin-top: 30px;
+  padding: 1rem;
+}
+
+footer img {
+  width: 30px;
+}
+
+footer .flex {
+  display: flex;
+  gap: 10px;
+}
+
+footer a {
+  display: block;
+  color: rgb(240, 235, 216);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h4 {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-family: "Ancizar Serif", serif;
+}
+
+footer p {
+  text-align: left;
+  color: rgb(240, 235, 216);
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Ancizar Serif", serif;
+}
+
+.footer_grid {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.footer_col {
+  margin-top: 2rem;
+}
+
+@media (min-width: 1000px) {
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-left: 10%;
+    margin-right: 8%;
+    align-items: center;
+  }
+
+  .footer_col {
+    margin-top: 0;
   }
 }
