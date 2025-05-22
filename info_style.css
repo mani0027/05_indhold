@@ -54,15 +54,6 @@ p {
   font-family: "Hepta Slab", serif;
 }
 
-iframe {
-  width: 100%;
-  height: 200px;
-  border: 0;
-  margin: 10px auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 
 
 
@@ -130,10 +121,6 @@ p {
   margin-bottom: 70px;
 }
 
-.atags {
-  border: 5px solid rgba(116, 10, 6, 1);
-}
-
 .atags a:hover {
   color: rgba(116, 10, 6, 1);
 }
@@ -147,6 +134,40 @@ a {
 
 @media (min-width:850px){
 
+  h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-family: "Goblin One", serif;
+  font-size: 45px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Goblin One", serif;
+   font-size: 25px;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  font-family: "Hepta Slab", serif;
+  line-height: 1.5rem;
+}
+
+.adressetekst{
+  margin-bottom: 70px;
+}
+
+
+.atags a:hover {
+  color: rgba(116, 10, 6, 1);
+}
+a {
+  color: black;
+}
 .adressetekst {
   margin: 20px;
   justify-content:center;
@@ -156,4 +177,45 @@ a {
   font-size: 1.2em;
 }
 
+iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  margin: 10px auto;
+  max-width: 850px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
+
+.åbningstiderteskt {
+  background-image: url(Img/åbningstiderpic.PNG);
+  width: 100%;
+  background-size:cover;
+  filter: grayscale(70%);
+  position: relative;
+  text-align: center;
+  padding:100px;
+  margin-bottom: 70px;
+
+ } 
+
+ .åbningstiderteskt:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5s;
+}
+
+.påbningstider {
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 50px;
+  letter-spacing: 0.9px;
+  color: rgba(116, 10, 6, 1);
+-webkit-text-stroke-color:  rgba(000, 0, 0, 1);
+-webkit-text-stroke-width: 1px; 
+margin-bottom: 20px;
+}
+}
+
+
