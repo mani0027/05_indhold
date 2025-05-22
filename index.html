@@ -7,44 +7,74 @@
     <title>Forside</title>
     <link rel="stylesheet" href="mutual_layout.css">
     <link rel="stylesheet" href="mutual_style.css">
+    <link rel="stylesheet" href="index_style.css">
 </head>
 
-<body class="fordide">
+<body class="forside">
 
-    <header>
-        <video class="video" src=""></video>
+    <header class="header_forside">
+        <hr class="streg1">
+        <img class="video" src="forside_img/video_img.png" alt="">
+        <img class="overskrift_web" src="forside_img/overskrift_web.png" alt="overskrift_web">
+        <ul class="menu">
+            <li><a href="museer.html">Forside</a></li>
+            <li><a href="guides.html">Info</a></li>
+            <li><a href="lokationer.html">Nyheder</a></li>
+            <li><a href="Om os">Museum Cafe Guide</a></li>
+            <li><a href="S">Shop</a></li>
+            <li><a href="galleri.html">Events</a></li>
+        </ul>
+        <hr class="streg2">
+        <div class="forside_titel">
+            <h1>Velkommen til Sex Beat Records!</h1>
+        </div>
+
         <nav>
-            <ul class="menu">
-                <li class="active"><a href="index.html">Forside</a></li>
-                <li><a href="info.html">Info</a></li>
-                <li><a href="nyheder.html">Nyheder</a></li>
-                <li><a href="om_os.html">Om os</a></li>
-                <li> <a href="shop.html">Merch</a></li>
-                <li> <a href="events.html">Events</a></li>
-            </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
+
     </header>
 
     <main>
-        <div class="grid_1-1">
-            <h1>Velkommen til Sex Beat Records</h1>
-            <h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae commodi in ad cupiditate, consequatur
-                magni ipsam deleniti aspernatur quidem veritatis doloribus tempore fugit, nam omnis dolorem consectetur
-                aperiam sit porro?</h3>
-            <div>
-                <img class="img_1" src="" alt="">
-                <img class="img_2" src="" alt="">
-                <img class="img_3" src="" alt="">
-                <img class="img_4" src="" alt="">
-            </div>
+
+        <div>
+            <ul class="knapper_grid">
+                <li class="nyheder_forside">
+                    <a class="grid-component__item-link" href="nyheder.html">
+                        <img src="forside_img/img_forside1.png" alt="nyheder knap">
+                    </a>
+                </li>
+                <li class="lokation_forside">
+                    <a class="grid-component__item-link" href="kontakt.html">
+                        <img src="forside_img/img_forside2.png" alt="kontakt knap">
+                    </a>
+                </li>
+                <li class="shop_forside">
+                    <a class="grid-component__item-link" href="shop.html">
+                        <img src="forside_img/img_forside3.png" alt="shop knap">
+                    </a>
+                </li>
+                <li class="events_forside">
+                    <a class="grid-component__item-link" href="events.html">
+                        <img src="forside_img/img_forside4.png" alt="events knap">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <footer>
         <div class="flex">
-
+            <hr class="streg3">
+            <hr class="streg4">
         </div>
     </footer>
-
+    <script src="menu.js"></script>
 </body>
 
 </html>
