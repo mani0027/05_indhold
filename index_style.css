@@ -76,14 +76,15 @@ body {
     display: grid;
     grid-column: 1/6;
   }
-  .tyk-streg1 {
-    height: 70px;
+  .streg1 {
+    height: 40px;
     background-color: black;
     border: none;
     width: 100%;
     margin: 0;
     grid-column: 1/6;
-    margin-top: -570px;
+    grid-row: 1/2;
+    margin-top: px;
     z-index: 2;
   }
 
@@ -93,21 +94,24 @@ body {
     grid-row: 1/3;
   }
 
-  .tyk-streg2 {
-    height: 70px;
+  .streg2 {
+    height: 40px;
     background-color: black;
     border: none;
     width: 100%;
     margin: 0;
+    margin-top: -20px;
     grid-column: 1/6;
-    margin-top: -320px;
-    z-index: 2;
+    grid-row: 3/4;
+    z-index: 3;
   }
 
   .overskrift_forside {
     grid-column: 1/5;
-    margin-top: -230px;
-    margin-left: 20px;
+    grid-row: 3/4;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 10px;
   }
   /******* main **********/
   .knapper_grid {
@@ -120,13 +124,14 @@ body {
     display: grid;
     grid-column: 2/6;
     grid-row: 1/2;
-    margin-top: -50px;
-    padding-bottom: 30px;
+    margin-top: 5px;
+    padding-bottom: 10px;
   }
   .lokation_forside {
     display: grid;
     grid-column: 2/6;
     grid-row: 2/3;
+    padding-top: 10px;
     padding-bottom: 50px;
   }
 
@@ -134,14 +139,160 @@ body {
     display: grid;
     grid-column: 2/6;
     grid-row: 3/4;
+    padding-top: 10px;
     padding-bottom: 50px;
   }
   .events_forside {
     display: grid;
     grid-column: 2/6;
     grid-row: 4/5;
+    padding-top: 10px;
     padding-bottom: 50px;
   }
+}
+/*************** forside__web_layout *********************/
+@media (min-width: 800px) {
+  /******* header **********/
+  .header_forside {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  header img {
+    display: grid;
+    grid-column: 1/6;
+  }
+  .streg1 {
+    height: 80px;
+    background-color: black;
+    border: none;
+    width: 95%;
+    margin-left: 75px;
+    grid-column: 1/6;
+    grid-row: 1/2;
+    margin-top: 1800px;
+    z-index: 2;
+  }
 
-  /*************** forside_mobil *********************/
+  .video {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  .streg2 {
+    height: 80px;
+    background-color: black;
+    border: none;
+    width: 85%;
+    margin: 0;
+    margin-top: -1550px;
+    grid-column: 1/6;
+    grid-row: 3/4;
+    margin-left: 230px;
+    z-index: 3;
+  }
+  .menu {
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
+    padding: 0;
+    font-size: 5rem;
+    margin-top: 70px;
+  }
+
+  .menu li {
+    margin-right: 15px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+  }
+  .overskrift_web {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    margin-left: 15px;
+    margin-right: 10px;
+    z-index: 3;
+    margin-top: -1300px;
+  }
+  /******* main **********/
+  .forside_titel {
+    margin-left: 1000px;
+    font-size: 3rem;
+    margin-top: px;
+    z-index: 4;
+  }
+  .knapper_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .nyheder_forside {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-inline: 300px;
+    margin-bottom: 300px;
+    margin-top: -800px;
+  }
+  .lokation_forside {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-inline: 300px;
+    margin-bottom: 300px;
+    margin-top: -800px;
+  }
+
+  .shop_forside {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-inline: 300px;
+    margin-bottom: 300px;
+    margin-top: -300px;
+    margin-right: 50px;
+  }
+  .events_forside {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-inline: 300px;
+    margin-bottom: 300px;
+    margin-top: -300px;
+    margin-left: 50px;
+  }
+  /******* footer **********/
+  .streg3 {
+    height: 80px;
+    background-color: black;
+    border: none;
+    width: 90%;
+    margin-left: 150px;
+  }
+  .streg4 {
+    height: 80px;
+    background-color: black;
+    border: none;
+    width: 90%;
+    margin-left: 150px;
+    margin-top: 500px;
+    margin-bottom: 70px;
+  }
 }
