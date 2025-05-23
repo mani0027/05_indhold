@@ -21,6 +21,7 @@ h3 {
 .info_tekst {
   padding: 20px;
 }
+
 @media screen and (max-width: 800px) {
   /******* header **********/
 
@@ -85,6 +86,7 @@ h3 {
   /******* main **********/
   .forside_titel h1 {
     font-size: 25px;
+    padding: 5px;
   }
   .knapper_grid img {
     padding: 40px;
@@ -197,7 +199,10 @@ h3 {
     margin: 0 4em;
     padding-top: 50px;
   }
-
+  .info_tekst {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   .knapper_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
