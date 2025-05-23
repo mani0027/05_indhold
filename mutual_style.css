@@ -10,21 +10,12 @@ img {
   display: block;
 }
 
-/*******************************************/
+/***************** variable *****************/
 
-body {
-  background-color: rgb(240, 235, 216);
-}
-
-/**************** Baggrundsramme ****************/
-
-#ramme {
-  background: url(billeder/ramme/top_ramme.svg) center top no-repeat, url(billeder/ramme/bund_ramme.svg) center bottom no-repeat;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-size: 90%, 90%;
+html {
+  --rød: rgba(116, 10, 6, 1);
+  --beige: rgb(240, 235, 216);
+  --h1font: "Goblin One", serif;
 }
 
 /************ Font ***********/
@@ -46,18 +37,36 @@ body {
   font-style: normal;
 }
 
+/*******************************************/
+
+body {
+  background-color: var(--beige);
+}
+
+/**************** Baggrundsramme ****************/
+
+#ramme {
+  background: url(billeder/ramme/top_ramme.svg) center top no-repeat, url(billeder/ramme/bund_ramme.svg) center bottom no-repeat;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-size: 90%, 90%;
+}
+
 /********* Tekst ********/
 
 h1 {
   text-align: center;
   margin-top: 10px;
-  font-family: "Goblin One", serif;
+  font-family: var(--h1font);
 }
 
 h2 {
   text-align: center;
   margin-top: 50px;
   font-family: "Goblin One", serif;
+  font-size: 1.4rem;
 }
 
 p {
@@ -65,11 +74,12 @@ p {
   margin-top: 20px;
   margin-bottom: 27px;
   font-family: "Hepta Slab", serif;
+  font-size: 1.2rem;
 }
 
 /***************** Menu (menuen er fra undervisning med små justeringer) ********************/
 header {
-  background-color: rgba(240, 235, 216, 1);
+  background-color: var(--beige);
   padding-top: 2rem;
 }
 
@@ -100,7 +110,7 @@ header {
 }
 
 .menu a:hover {
-  color: rgba(116, 10, 6, 1);
+  color: var(--rød);
   text-decoration: underline;
 }
 
@@ -161,7 +171,7 @@ header {
 
   nav.active .menu {
     display: block;
-    background-color: rgba(240, 235, 216, 1);
+    background-color: var(--beige);
     position: absolute;
     top: 10%;
     left: 8%;
@@ -189,7 +199,7 @@ header {
 
 footer {
   background-color: black;
-  color: rgb(240, 235, 216);
+  color: var(--beige);
   line-height: 40px;
   margin-top: 30px;
   padding: 1rem;
@@ -206,7 +216,7 @@ footer .flex {
 
 footer a {
   display: block;
-  color: rgb(240, 235, 216);
+  color: var(--beige);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -223,7 +233,7 @@ footer h4 {
 
 footer p {
   text-align: left;
-  color: rgb(240, 235, 216);
+  color: var(--beige);
   margin: 0;
   font-size: 1rem;
   font-family: "Ancizar Serif", serif;
