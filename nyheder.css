@@ -32,7 +32,7 @@ main img {
   overflow: hidden;
 }
 
-.galleri > img {
+.galleri img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
@@ -46,7 +46,7 @@ main img {
 }
 
 /** Hovereffekt på billeder og hvor stort billedet bliver **/
-.galleri > img:hover:not(.full) {
+.galleri img:hover:not(.full) {
   transform: scale(1.2);
 }
 .galleri img {
