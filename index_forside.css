@@ -1,5 +1,26 @@
 /*************** mobil_forside *********************/
-
+.knapper_grid {
+  position: relative;
+  display: inline-block;
+}
+.knapper_grid img {
+  filter: grayscale();
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.knapper_grid img:hover:not(.full) {
+  transform: scale(1.1);
+  filter: saturate();
+}
+h3 {
+  font-family: "Hepta Slab", serif;
+}
+p {
+  padding: 20px;
+}
 @media screen and (max-width: 800px) {
   /******* header **********/
 
@@ -68,7 +89,54 @@
   .knapper_grid img {
     padding: 40px;
   }
-
+  .img_tekst1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 510px;
+    left: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img_tekst2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 1090px;
+    left: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img_tekst3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 1660px;
+    left: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img_tekst4 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 2250px;
+    left: 35px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
   /******* footer **********/
   footer {
     background-color: rgba(240, 235, 216, 1);
@@ -86,7 +154,11 @@
     color: #000;
   }
 }
-
+@media screen and (max-width: 800px) {
+  .knapper_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 /*************** web_forside *********************/
 @media (min-width: 800px) {
   /******* header **********/
@@ -151,6 +223,50 @@
   .lokation_forside {
     padding-right: 200px;
     padding-left: 100px;
+  }
+  .img_tekst1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 620px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img_tekst2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 620px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img_tekst3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 1280px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .img_tekst4 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    top: 1280px;
+    padding: 10px 20px;
+    border-radius: 10px;
   }
 
   /******* footer **********/
