@@ -46,7 +46,7 @@ body {
 /**************** Baggrundsramme ****************/
 
 #ramme {
-  background: url(billeder/ramme/top_ramme.svg) center top no-repeat, url(billeder/ramme/bund_ramme.svg) center bottom no-repeat;
+  background: url(../billeder/ramme/top_ramme.svg) center top no-repeat, url(../billeder/ramme/bund_ramme.svg) center bottom no-repeat;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
@@ -289,6 +289,11 @@ footer p {
   color: var(--beige);
   border: 3px solid black;
   font-family: "Goblin One", serif;
+}
+
+.knap_404:hover {
+  filter: grayscale(15%);
+  scale: 1.1;
 }
 
 @media (min-width: 550px) {
