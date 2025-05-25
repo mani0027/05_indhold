@@ -70,10 +70,12 @@ main a:hover {
 .galleri {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
   max-width: 900px;
   margin: 0 auto;
   overflow: hidden;
   margin-bottom: 4rem;
+  padding: 2rem;
 }
 
 .galleri img {
@@ -81,7 +83,6 @@ main a:hover {
   object-fit: cover;
   aspect-ratio: 1/1;
   transition: all 0.3s;
-  padding: 20px;
 }
 
 @media screen and (max-width: 640px) {
