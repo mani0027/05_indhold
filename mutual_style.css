@@ -263,3 +263,36 @@ footer p {
     margin-top: 0;
   }
 }
+
+/********** 404 side ***********/
+
+.lottiefile_side {
+  position: relative;
+  max-width: 1000px;
+  margin: 5% auto;
+}
+
+.lottiefile {
+  width: 100%;
+  height: auto;
+}
+
+.knap_404 {
+  position: absolute;
+  top: 83%;
+  left: 34%;
+  background-color: var(--rød);
+  width: 30%;
+  text-align: center;
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  color: var(--beige);
+  border: 3px solid black;
+  font-family: "Goblin One", serif;
+}
+
+@media (min-width: 550px) {
+  .knap_404 {
+    font-size: 0.8rem;
+  }
+}
