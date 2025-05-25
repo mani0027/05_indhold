@@ -1,7 +1,29 @@
 /*************** mobil_forside *********************/
 .knapper_grid {
-  position: relative;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10% 15%;
+  gap: 30px;
+  list-style-type: none;
+}
+.forside_grid_link {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1fr;
+}
+.forside_grid_link img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.img_tekst {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: white;
+  font-size: 30px;
+  padding-left: 5%;
+  font-weight: bold;
+  border-radius: 10px;
+  z-index: 10;
 }
 .knapper_grid img {
   filter: grayscale();
@@ -44,7 +66,6 @@ h3 {
 
   .burger .line {
     width: 40px;
-    height: 5px;
   }
 
   .burger.active .line:nth-child(1) {
@@ -73,15 +94,18 @@ h3 {
     display: block;
     background-color: var(--beige);
     position: absolute;
-    top: 26%;
+    top: 35%;
     left: 2%;
     width: 100%;
-    height: 25%;
+    height: 30%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 5;
     text-align: center;
   }
 
+  .findos {
+    text-wrap: nowrap;
+  }
   nav.active .menu_forside li {
     margin: 10px 20px;
   }
@@ -90,7 +114,7 @@ h3 {
     font-size: 24px;
   }
   /* Gør indholdet bag burgermenuen slørret*/
-  .menu-open .indhold {
+  .menu-open .forside_indhold {
     opacity: 30%;
   }
   /******* overskrift **********/
@@ -104,57 +128,7 @@ h3 {
     font-size: 25px;
     padding: 5px;
   }
-  .knapper_grid img {
-    padding: 40px;
-  }
-  .img_tekst1 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 510px;
-    left: 30px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  .img_tekst2 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 1090px;
-    left: 30px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  .img_tekst3 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 1660px;
-    left: 25px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  .img_tekst4 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 2250px;
-    left: 35px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
+
   /******* footer **********/
   footer {
     background-color: rgba(240, 235, 216, 1);
@@ -172,11 +146,7 @@ h3 {
     color: #000;
   }
 }
-@media screen and (max-width: 800px) {
-  .knapper_grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
+
 /*************** web_forside *********************/
 @media (min-width: 800px) {
   /******* header **********/
@@ -194,6 +164,9 @@ h3 {
     justify-content: space-around;
     padding: 2em 0;
     margin: 0 auto;
+  }
+  .findos {
+    text-wrap: nowrap;
   }
 
   header ul a {
@@ -222,72 +195,29 @@ h3 {
   .knapper_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 10% 15%;
+    gap: 15%;
+    list-style-type: none;
   }
 
-  .knapper_grid img {
-    border-color: #000;
-    padding-top: 100px;
+  .forside_grid_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
   }
-  .nyheder_forside {
-    padding-left: 200px;
-    padding-right: 100px;
+  .forside_grid_link img {
+    grid-column: 1/2;
+    grid-row: 1/3;
   }
-  .shop_forside {
-    padding-right: 200px;
-    padding-left: 100px;
-  }
-  .events_forside {
-    padding-left: 200px;
-    padding-right: 100px;
-    padding-bottom: 300px;
-  }
-  .lokation_forside {
-    padding-right: 200px;
-    padding-left: 100px;
-  }
-  .img_tekst1 {
-    position: absolute;
-    transform: translate(-50%, -50%);
+  .img_tekst {
+    grid-column: 1/2;
+    grid-row: 2/3;
     color: white;
     font-size: 30px;
+    padding-left: 5%;
     font-weight: bold;
-    margin-left: 100px;
-    top: 620px;
-    padding: 10px 20px;
     border-radius: 10px;
-  }
-  .img_tekst2 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 620px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  .img_tekst3 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 1280px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  .img_tekst4 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 100px;
-    top: 1280px;
-    padding: 10px 20px;
-    border-radius: 10px;
+    z-index: 10;
   }
 
   /******* footer **********/
