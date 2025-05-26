@@ -43,6 +43,12 @@ h3 {
 .info_tekst {
   padding: 20px;
 }
+.video img {
+  filter: grayscale();
+}
+.video img:hover:not(.full) {
+  filter: saturate();
+}
 @media screen and (max-width: 800px) {
   /******* header **********/
 
@@ -179,7 +185,6 @@ h3 {
   }
   header ul a:hover {
     color: rgba(116, 10, 6, 1);
-    text-decoration: underline;
   }
 
   /******* main **********/
